@@ -1,0 +1,95 @@
+@import "../../../../Style/variable.scss";
+
+.docosan {
+  .hight-light {
+    height: 50px;
+    width: 100%;
+
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(129, 233, 112, 0.8972631288843662) 0%,
+      rgba(136, 140, 226, 1) 41%,
+      rgba(0, 212, 255, 1) 100%
+    );
+  }
+
+  h1 {
+    color: $Gcolor-grey;
+    text-align: center;
+  }
+  .docosan-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .icon {
+      background: url("../../../../img/docosan-logo-white-large.png");
+      background-size: cover;
+      height: 75px;
+      width: 75px;
+    }
+    span {
+      font-size: 30px;
+    }
+  }
+
+  .container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px 0px;
+
+    .title {
+      color: rgba($color: $Gcolor-grey, $alpha: 0.5);
+      font-size: 20px;
+    }
+  }
+
+  .footer {
+    background-color: $Gcolor-grey;
+    padding: 20px 0px;
+
+    &-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      color: #fff;
+
+      width: 80%;
+      margin: 0 auto;
+
+      & ul {
+        padding: 0;
+      }
+
+      & ul > li {
+        list-style: none;
+      }
+
+      & > .footer-right {
+        display: flex;
+
+        & > ul:nth-child(1) {
+          padding-right: 20px;
+        }
+
+        & > ul:nth-child(2) {
+          text-align: right;
+          padding-left: 50px;
+          border-left: 1px solid #fff;
+        }
+      }
+    }
+
+    & > .website {
+      text-align: right;
+      width: 80%;
+      margin: 0 auto;
+
+      & > a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}

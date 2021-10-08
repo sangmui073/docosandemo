@@ -1,0 +1,16 @@
+@import "../../../../Style/variable.scss";
+
+.pagination {
+  & > button {
+    border: 1px solid #fff;
+
+    background-color: $Gcolor-green;
+
+    padding: 10px;
+  }
+
+  & .active {
+    color: #fff;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,47 @@
+@import "../../../../Style/variable.scss";
+
+.doctor-filter {
+  display: flex;
+  align-items: center;
+
+  & button {
+    background: none;
+    border: none;
+    border-radius: 10px;
+
+    display: inline-block;
+    padding: 3px 13px;
+    margin-left: 5px;
+
+    cursor: pointer;
+  }
+
+  &--left {
+    margin-right: 50px;
+    & > button {
+      color: #fff;
+      background: $Gcolor-green;
+    }
+
+    & > .dropdown-list {
+      position: relative;
+    }
+  }
+
+  &--right {
+    & > .dropdown-list {
+      position: relative;
+    }
+
+    & > button {
+      border: 0.5px solid $Gcolor-grey;
+    }
+
+    & > .active {
+      color: #fff;
+      background: $Gcolor-green;
+
+      border: none;
+    }
+  }
+}

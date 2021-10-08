@@ -1,0 +1,62 @@
+@import "../../../../Style/variable.scss";
+
+.doctor-item {
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: $Gborder-radius;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+
+  display: flex;
+
+  &--left {
+    border-radius: $Gborder-radius;
+    overflow: hidden;
+
+    & > img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &--right {
+    margin-left: 20px;
+
+    line-height: 25px;
+
+    & span {
+      font-size: 14px;
+      color: $Gcolor-grey;
+      display: block;
+    }
+
+    & > .item-top {
+      & > .doctor-name {
+        color: $Gcolor-grey;
+        font-size: 20px;
+      }
+
+      & > .doctor-rating {
+        display: flex;
+        align-items: center;
+
+        & > .rating {
+        }
+
+        & > span {
+          margin-left: 10px;
+        }
+      }
+    }
+
+    & > .item-bottom {
+      margin-top: 10px;
+    }
+  }
+}
